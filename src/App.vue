@@ -1,26 +1,61 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header />
+    <Panel
+      title="Model S"
+      text="Order Online for Touchless Delivery"
+      image="model-s.jpg"
+      twoButtons
+    />
+    <Panel
+      title="Model 3"
+      text="Order Online for Touchless Delivery"
+      image="model-3.jpg"
+      twoButtons
+    />
+    <Panel
+      title="Model X"
+      text="Order Online for Touchless Delivery"
+      image="model-x.jpg"
+      twoButtons
+    />
+    <Panel
+      title="Model Y"
+      text="Order Online for Touchless Delivery"
+      image="model-y.jpg"
+      twoButtons
+    />
+    <Panel
+      title="Solar Roof"
+      text="Produce Clean Energy From Your Roof"
+      twoButtons
+    />
+    <Panel
+      title="Solar Panels"
+      text="Lowest Cost Solar Panels in America"
+      twoButtons
+    />
+    <Panel title="Accesories" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./components/Header.vue";
+import Panel from "./components/Panel.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Panel,
+  },
+};
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+* {
+  font-family: "Sawarabi Gothic", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 </style>
