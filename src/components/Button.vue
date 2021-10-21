@@ -17,7 +17,7 @@ export default {
   },
 };
 </script>
-<style scope>
+<style scoped>
 button {
   width: 250px;
   height: 45px;
@@ -26,5 +26,10 @@ button {
   margin: 10px;
   opacity: 0.7;
   cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  button {
+    margin: 0 0 10px 0;
+  }
 }
 </style>
